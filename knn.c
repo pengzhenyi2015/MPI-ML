@@ -438,6 +438,15 @@ int main(int argc, char** argv) {
     return 0;
 }
 
+/*
+ * Read file(character format), and store in buffer(double array)
+ * @param:
+ *  filename: file directory
+ *  dataset: the double array to store data
+ *  datasize: indicates how many records in dataset
+ * @return:
+ *  Label which is most frequent in K nearest neighbours
+ * */
 int readfile_to_buffer(char* filename, double* dataset, int datasize) {
     int fd = 0;
     int current_size = 0;
