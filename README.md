@@ -6,7 +6,9 @@ A KNN algorithm （Euclidean, L2） to recongnize handwriting numbers from 0 to 
 Dataset：mnist http://yann.lecun.com/exdb/mnist/
 
 How to use: mpicc knn.c -o knn -O -Wall
+
 mpirun --allow-run-as-root -np 4 -host gpu1 knn --trainset data_training --testset data_test --trainsize 60000 --testsize 10000
+
 Outputs:
 Thu Feb 25 14:24:43 2016[1,0]<stdout>:Test 1000 samples, correct rate:0.854000
 
