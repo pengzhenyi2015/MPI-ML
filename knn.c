@@ -74,7 +74,7 @@ int main(int argc, char** argv) {
         {0, 0, 0, 0}
     };
 
-    if (argc < 4) {
+    if (argc < 8) {
         printf("Usage: knn --trainset <trainset directory> --testset <testset directory>\
             --trainsize <trainsize rows> --testsize <testsize rows>\n");
         return 0;
@@ -102,6 +102,7 @@ int main(int argc, char** argv) {
 
         default:
             printf("Error: unknown argument");
+            exit(-1);
             break;
         }
     }
