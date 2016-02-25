@@ -2,7 +2,8 @@
 Simple MPI Programs，and Meachine Learning Programs written by MPI-C
 
 # KNN
-A KNN algorithm （Euclidean, L2） to recongnize handwriting numbers from 0 to 9
+A KNN algorithm （Euclidean, L2） to recongnize handwriting digits from 0 to 9
+
 Dataset：mnist http://yann.lecun.com/exdb/mnist/
 
 How to use: mpicc knn.c -o knn -O -Wall
